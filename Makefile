@@ -6,20 +6,19 @@
 ##
 
 
-SRC = 	$(wildcard src/*c)
+SRC = 	$(wildcard *.c)
 
 NAME = hashcode
 
 OBJ = $(SRC:.c=.o)
 
-FLAGS = -W -Wall -Wextra -lm -lncurses -L ./lib/my/ -lmy
+FLAGS = -W -Wall -Wextra
 
 RM = rm -f
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	cd lib/my && make re
 	$(CC) -o $(NAME) $(OBJ) $(FLAGS)
 	$(RM) $(OBJ)
 
