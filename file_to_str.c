@@ -5,7 +5,7 @@
 ** file_to_str.c
 */
 
-#include "../include/my.h"
+#include "include/hash.h"
 
 size_t size(const char *buffer)
 {
