@@ -21,7 +21,7 @@ typedef struct contributor
     char *skill;
     int level;
     int is_free;
-    contributor_t *next;
+    struct contributor *next;
 }contributor_t;
 
 typedef struct projet
@@ -29,7 +29,7 @@ typedef struct projet
     char *name;
     int ask_dev;
     int nb_day;
-    projet_t *next;
+    struct projet *next;
 }projet_t;
 
 typedef struct info
